@@ -14,7 +14,7 @@ Configure and test basic firewall rules to allow or block network traffic on a W
    - In **Inbound Rules → New Rule → Port**  
    - Selected **TCP**, specified **port 23 (Telnet)**.  
    - Chose **Block the connection** for all profiles (Domain, Private, Public).  
-   - Named the rule `Block_Telnet_23`.
+   - Named the rule `Block_Telnet`.
 
 4. **Tested the Rule**  
    - Ran PowerShell command:
@@ -24,7 +24,7 @@ Configure and test basic firewall rules to allow or block network traffic on a W
    - Output showed `TcpTestSucceeded : False`, confirming the block.
 
 5. **Removed the Test Rule**  
-   - Deleted the `Block_Telnet_23` rule to restore the original state.
+   - Deleted the `Block_Telnet` rule to restore the original state.
 
 ## Outcome
 - Verified that inbound traffic on port 23 was successfully blocked.
@@ -37,6 +37,11 @@ Configure and test basic firewall rules to allow or block network traffic on a W
 - **Port 23 (Telnet)**: Often blocked due to insecure, unencrypted communication.
 
 ## Screenshots
-*(Add your captured screenshots here: rule creation, Test-NetConnection results, etc.)*
+## Rule Creation
+<img width="532" height="714" alt="image" src="https://github.com/user-attachments/assets/69a599e6-8c96-47fb-b834-d62815241c0d" />
+
+## Test-NetConnection
+<img width="1470" height="760" alt="image" src="https://github.com/user-attachments/assets/5c73f743-f780-4291-99e1-c820f5acee3c" />
+
 
 ---
