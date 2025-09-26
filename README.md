@@ -36,6 +36,15 @@ Configure and test basic firewall rules to allow or block network traffic on a W
 - **Outbound Rule**: Controls outgoing traffic from the system.
 - **Port 23 (Telnet)**: Often blocked due to insecure, unencrypted communication.
 
+## Summary(How Firewall filters Traffic):
+- Inbound Rules: Control traffic coming into your PC.
+
+- Outbound Rules: Control traffic leaving your PC (not tested in this task).
+
+- Rule Matching: The firewall checks each packet against all rules and takes action (allow/block) based on the first matching rule.
+
+- Practical Verification: Removing the rule restored access, confirming that rules actively control traffic flow.
+
 ## Screenshots
 ## Rule Creation
 <img width="532" height="714" alt="image" src="https://github.com/user-attachments/assets/69a599e6-8c96-47fb-b834-d62815241c0d" />
